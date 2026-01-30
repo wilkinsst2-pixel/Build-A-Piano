@@ -47,3 +47,11 @@ body {
 .black.active {
   background-color: #660000;
 }
+
+/* Display current note*/
+#current-note {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}

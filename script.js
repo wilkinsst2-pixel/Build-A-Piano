@@ -15,6 +15,9 @@ function playNote(key) {
 
   key.classList.add('active');
   
+  const currentNoteDisplay = document.getElementById('current-note');
+  currentNoteDisplay.textContent = `Current Note: ${key.dataset.note.toUpperCase()}`;
+  
   noteAudio.addEventListener('ended', () => {
     key.classList.remove('active');
   });
